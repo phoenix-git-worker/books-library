@@ -16,5 +16,6 @@ class Author(models.Model):
     )
     book_ids = fields.Many2many(
         comodel_name='kw.lib.book',
-        string='Boooks'
+        string='Boooks',
+        relation='author_book_rel'
     )
